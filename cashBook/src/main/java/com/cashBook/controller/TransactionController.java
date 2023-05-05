@@ -16,7 +16,7 @@ public class TransactionController {
 	private TransactionService transactionService;
 
 	@PostMapping("/transaction")
-	public String saveEmployee(@RequestBody TransactionDto transactionDto) {
+	public String saveTransaction(@RequestBody TransactionDto transactionDto) {
         System.out.println(transactionService.transactionSave(transactionDto));
 		return transactionService.transactionSave(transactionDto);
 
